@@ -124,11 +124,11 @@ class Directo
      */
     public function formUrl()
     {
-        return sprintf(
-            '//%s.s3-%s.amazonaws.com',
-            $this->bucket,
-            $this->region
-        );
+        if ($this->options->custom_url) {
+            return $this->options->endpoint;
+        } else {
+            return sprintf('//%s.s3-%s.amazonaws.com', $this->bucket, $this->region);
+        }
     }
 
     /**

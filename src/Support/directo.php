@@ -36,4 +36,8 @@ return [
     // Any additional inputs to add to the form. This is an array of name => value
     // pairs e.g. ['Content-Disposition' => 'attachment']
     'additional_inputs' => [],
+
+    'custom_url' => false,
+
+    'endpoint' => ''
 ];

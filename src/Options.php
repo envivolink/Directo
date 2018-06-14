@@ -17,6 +17,8 @@ use Kfirba\Directo\Exceptions\InvalidExpiresStringException;
  * @property string  valid_prefix
  * @property string  content_type
  * @property array   additional_inputs
+ * @property boolean custom_url
+ * @property string endpoint
  *
  * @package Kfirba\Directo
  */
